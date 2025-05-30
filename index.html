@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Modern Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Kalyani</div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to My Modern Website</h1>
+            <p>Creating beautiful, responsive designs with modern CSS techniques.</p>
+            <a href="#" class="btn">Get Started</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h2>Feature 1</h2>
+                <p>Responsive layouts that adapt to any screen size.</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 2</h2>
+                <p>Clean typography and color schemes for a modern look.</p>
+            </div>
+            <div class="feature">
+                <h2>Feature 3</h2>
+                <p>Interactive elements that engage your audience.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MyBrand. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // script.js
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+    </script>
+</body>
+
+</html>
